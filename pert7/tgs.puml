@@ -1,0 +1,68 @@
+@startuml pert7
+start
+
+#include <iostream>
+using namespace std;
+
+void tampilkanMenuUtama();
+void tampilkanMenuMakanan();
+void detailMieGoreng();
+
+int main() {
+    int pilihan;
+    while (true) {
+        tampilkanMenuUtama();
+        cin >> pilihan;
+        if (pilihan == 1) {
+            tampilkanMenuMakanan();
+        } else if (pilihan == 2) {
+            cout << "Minuman belum tersedia.\n";
+        } else if (pilihan == 3) {
+            cout << "Terima kasih! Program selesai.\n";
+            break;
+        } else {
+            cout << "Pilihan tidak valid, silakan coba lagi.\n";
+        }
+    }
+    return 0;
+}
+
+void tampilkanMenuUtama() {
+    cout << "\n==========Menu Utama==========\n";
+    cout << "1. Makanan\n";
+    cout << "2. Minuman\n";
+    cout << "3. Exit\n";
+    cout << "Pilih: ";
+}
+
+void tampilkanMenuMakanan() {
+    int pilihan;
+    while (true) {
+        cout << "\n==========Menu Makanan==========\n";
+        cout << "1. Mie Goreng\n";
+        cout << "2. Nasi Goreng\n";
+        cout << "3. Kembali\n";
+        cout << "Pilih: ";
+        cin >> pilihan;
+        if (pilihan == 1) {
+            detailMieGoreng();
+        } else if (pilihan == 2) {
+            cout << "Anda memilih Nasi Goreng.\n";
+        } else if (pilihan == 3) {
+            break;
+        } else {
+            cout << "Pilihan tidak valid, silakan coba lagi.\n";
+        }
+    }
+}
+
+void detailMieGoreng() {
+    int qty;
+    cout << "\nPemesanan Mie Goreng:\n";
+    cout << "Masukkan jumlah : ";
+    cin >> qty;
+    int total = qty * 15000;  // Misalnya harga per porsi adalah 15000
+    cout << "Total harga: " << total << "\n";
+    cout << "Kembali ke menu makanan.\n";
+}
+

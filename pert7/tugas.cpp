@@ -10,7 +10,7 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 using namespace std;
 
-int main() { 12
+int main() {
     int pilihan;
  
     do {

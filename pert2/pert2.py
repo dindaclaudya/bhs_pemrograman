@@ -6,6 +6,6 @@ b = 2
 print (a+b)
 
 
-nama = "Meyze HadiShopia"
+nama = "Dinda Claudya"
 
 print (nama)

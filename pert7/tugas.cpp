@@ -10,9 +10,9 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 using namespace std;
 
-int main() {
+int main() { 12
     int pilihan;
-
+ 
     do {
         cout << "=== MENU ===" << endl;
         cout << "Makanan:" << endl;

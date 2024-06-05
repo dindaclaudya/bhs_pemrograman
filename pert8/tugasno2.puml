@@ -1,0 +1,17 @@
+@startuml
+title Alur Proyek: Layanan Penyewaan Peralatan Camping dan Outdoor
+
+start
+:Identifying Business Goal;
+:Assessing Situation;
+:Producing Project Plan;
+:Riset Pasar dan Perencanaan;
+:Persiapan Inventaris dan Lokasi;
+:Pengembangan Platform Digital;
+:Strategi Pemasaran dan Branding;
+:Rekrutmen dan Pelatihan Tim;
+:Peluncuran dan Promosi;
+:Operasional dan Manajemen Berkelanjutan;
+stop
+
+@enduml
